@@ -19,7 +19,7 @@ porque effort alto e valor depende de validação primeiro.
 Focado em outcomes, com 3 fases mínimas:
 
 | Fase | Horizonte | Objetivos/Entregáveis |
-|------|-----------|-----------------------|
+|------|-----------|----------------------|
 | **1: Descoberta/Validação** | Q1 | MVP live; 80% precisão IA; testes com 1000 tickets reais |
 | **2: Entrega/Escala** | Q2 | Alertas real-time + omnicanal; corte 50% no tempo de resposta |
 | **3: Evolução** | Q3+ | Predições + automação tasks (Jira); NPS interno >70 |
@@ -31,10 +31,10 @@ Focado em outcomes, com 3 fases mínimas:
 
 Abordagem híbrida em 4 fases principais:
 
-1. **Descoberta:** Entrevistas com time CX + protótipo low-fi. Critério de avanço: Validação de dor em 70% dos usuários.
-2. **Validação:** Build/teste MVP. Avanço se: >75% precisão IA e feedback positivo em piloto.
-3. **Entrega:** Lançamento beta + integrações. Avanço com: 50% adoção no time e KR1 batido.
-4. **Evolução:** Iterações baseadas em dados. Continua enquanto ROI > custo IA.
+1. **Descoberta:** Entrevistas com time CX + protótipo low-fi. Critério de avanço: Validação de dor em 70% dos usuários.
+2. **Validação:** Build/teste MVP. Avanço se: >75% precisão IA e feedback positivo em piloto.
+3. **Entrega:** Lançamento beta + integrações. Avanço com: 50% adoção no time e KR1 batido.
+4. **Evolução:** Iterações baseadas em dados. Continua enquanto ROI > custo IA.
 
 Sprints de 2 semanas pra agilidade, com gates claros pra não desperdiçar.
 
@@ -43,7 +43,7 @@ Sprints de 2 semanas pra agilidade, com gates claros pra não desperdiçar.
 Identifiquei 5 riscos principais, classificados por probabilidade (baixa/média/alta) e impacto (baixo/médio/alto):
 
 | Risco | Probabilidade | Impacto | Plano de Mitigação |
-|-------|---------------|---------|--------------------|
+|-------|---------------|---------|-------------------|
 | **1. IA alucinando insights falsos** | Alta | Alto | Human-in-the-loop + validação 100% no MVP |
 | **2. Dados sensíveis vazando (LGPD)** | Média | Alto | Anonimização automática + auditoria semanal |
 | **3. Time resistindo à ferramenta** | Média | Médio | Workshops co-criação + treinamento como "copiloto" |
@@ -53,13 +53,13 @@ Identifiquei 5 riscos principais, classificados por probabilidade (baixa/média/
 
 ## **1.6 Gestão de Produtos e IA**
 
-**Riscos específicos de IA:** Alucinações, dependência de APIs externas (downtime OpenAI).
+**Riscos específicos de IA:** Alucinações, dependência de APIs externas (downtime OpenAI).
 
-**Éticas, segurança e confiabilidade:** Sempre anonimizar PII; bias checks nos prompts; fallback humano pra casos críticos. Testes de confiabilidade com 90% uptime garantido.
+**Éticas, segurança e confiabilidade:** Sempre anonimizar PII; bias checks nos prompts; fallback humano pra casos críticos. Testes de confiabilidade com 90% uptime garantido.
 
-**Impactos organizacionais:** Time ganha tempo pra estratégia (não triagem); mas treinar pra confiança na IA. Começa como piloto interno pra buy-in, medindo eNPS pra ajustar cultura.
+**Impactos organizacionais:** Time ganha tempo pra estratégia (não triagem); mas treinar pra confiança na IA. Começa como piloto interno pra buy-in, medindo eNPS pra ajustar cultura.
 
-**Métricas gerais (OKRs + KPIs):** KR1: Tempo problemas <4h; KR2: 85% precisão; KR3: eNPS +60. KPIs: Custo/insight, taxa erro IA.
+**Métricas gerais (OKRs + KPIs):** KR1: Tempo problemas <4h; KR2: 85% precisão; KR3: eNPS +60. KPIs: Custo/insight, taxa erro IA.
 
 ## **2. Parte Prática – Artefatos do InsightAI**
 
@@ -80,6 +80,7 @@ Identifiquei 5 riscos principais, classificados por probabilidade (baixa/média/
 **Artefato 2: Documento de MVP**
 
 **Lista de Funcionalidades + Prioridade + Critérios de Aceitação**
+
 | Funcionalidade | Prioridade (MoSCoW) | Critérios de Aceitação |
 |----------------|---------------------|------------------------|
 | Upload CSV/JSON de tickets | Essenciais | Suporta 10k linhas; processa em <2min; confirma upload |
@@ -90,52 +91,25 @@ Identifiquei 5 riscos principais, classificados por probabilidade (baixa/média/
 | Alertas Slack (Q2) | Desejáveis | Envia se problema > threshold; teste end-to-end |
 
 
-**Estimativa:** 4 sprints (8 semanas) pra MVP.
+**Estimativa:** 4 sprints (8 semanas) pra MVP.
 
 **Artefato 3: Roadmap Visual**
 
-## **Roadmap Visual (estilo FigJam/Board)**
+## **Roadmap Visual (Timeline de Desenvolvimento - InsightAI)**
 
-📊 **Timeline de Desenvolvimento - InsightAI**
-> ### 🎯 Q1 2026: Validação MVP
-> **Objetivo:** Provar valor com funcionalidades core
-> 
-> - ✅ Upload CSV/JSON + categorização automática
-> - ✅ Insights básicos (top 5 problemas)
-> - ✅ Dashboard sentimento
-> 
-> **🎯 Meta:** 80% precisão IA + piloto com cliente real
-
-⬇️
-
-> ### 🚀 Q2 2026: Escala
-> **Objetivo:** Expandir capacidades operacionais
-> 
-> - ⚡ Alertas real-time para crises
-> - 🔗 Integração omnicanal (APIs externas)
-> - 📉 Redução de 50% no tempo de resposta
-> 
-> **🎯 Meta:** Adoção de 50% do time + KR1 atingido
-
-⬇️
-
-> ### 🔮 Q3+ 2026: Evolução
-> **Objetivo:** IA preditiva e automação avançada
-> 
-> - 🤖 Predições de tendências futuras
-> - ⚙️ Automação de tasks (integração Jira)
-> - 📈 Dashboards avançados com drill-down
-> 
-> **🎯 Meta:** NPS interno >70 + ROI positivo sustentável
-
----
+| Fase | Horizonte | Objetivo | Entregáveis | Meta |
+|------|-----------|----------|-------------|------|
+| **Q1 2026: Validação MVP** | Q1 | Provar valor com funcionalidades core | ✅ Upload CSV/JSON + categorização automática; ✅ Insights básicos (top 5 problemas); ✅ Dashboard sentimento | 80% precisão IA + piloto com cliente real |
+| **Q2 2026: Escala** | Q2 | Expandir capacidades operacionais | ⚡ Alertas real-time para crises; 🔗 Integração omnicanal (APIs externas); 📉 Redução de 50% no tempo de resposta | Adoção de 50% do time + KR1 atingido |
+| **Q3+ 2026: Evolução** | Q3+ | IA preditiva e automação avançada | 🤖 Predições de tendências futuras; ⚙️ Automação de tasks (integração Jira); 📈 Dashboards avançados com drill-down | NPS interno >70 + ROI positivo sustentável |
 
 ### 💡 Legenda de Fases:
 - 🟢 **Descoberta/Validação** - Provar conceito e viabilidade técnica
 - 🟡 **Entrega/Escala** - Expandir uso e integrações
 - 🔵 **Evolução** - Inovação contínua baseada em dados
 
-Artefato 4: Matriz de Riscos
+**Artefato 4: Matriz de Riscos**
+
 | Risco | Probabilidade | Impacto | Plano de Mitigação | Responsável |
 |-------|---------------|---------|--------------------|-------------|
 | IA alucinando insights | Alta | Alto | Human-in-loop + validação 100% MVP | PM (eu) |
@@ -145,5 +119,4 @@ Artefato 4: Matriz de Riscos
 | Falha em integrações | Baixa | Médio | PoC pré-Q2 | Engenheiro |
 | Dependência API externa | Média | Alto | Backup com Anthropic | Tech Lead |
 
-
-Como usar: Review quinzenal; escore = Prob x Impacto (ex: Alta/Alto=9 → ação imediata).
+**Como usar:** Review quinzenal; escore = Prob x Impacto (ex: Alta/Alto=9 → ação imediata).
