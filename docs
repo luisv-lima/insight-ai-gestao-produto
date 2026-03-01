@@ -17,11 +17,13 @@ Should-haves adicionam polimento sem atrasar. Deixei integrações pra depois
 porque effort alto e valor depende de validação primeiro.
 1.3 Roadmap do Produto
 Focado em outcomes, com 3 fases mínimas:
-| Fase | Horizonte | Objetivos / Entregáveis |
-| :--- | :--- | :--- |
-| **1: Descoberta/Validação** | Q1 | MVP live; 80% precisão IA; testes com 1000 tickets reais. |
-| **2: Entrega/Escala** | Q2 | Alertas real-time + omnicanal; corte 50% no tempo de resposta. |
-| **3: Evolução** | Q3+ | Predições + automação tasks (Jira); NPS interno >70. |
+
+| Fase | Horizonte | Objetivos/Entregáveis |
+|------|-----------|-----------------------|
+| **1: Descoberta/Validação** | Q1 | MVP live; 80% precisão IA; testes com 1000 tickets reais |
+| **2: Entrega/Escala** | Q2 | Alertas real-time + omnicanal; corte 50% no tempo de resposta |
+| **3: Evolução** | Q3+ | Predições + automação tasks (Jira); NPS interno >70 |
+
 
 ## **Ciclo de Vida e Gerenciamento de Riscos**
 
@@ -39,13 +41,15 @@ Sprints de 2 semanas pra agilidade, com gates claros pra não desperdiçar.
 ## **1.5 Gerenciamento de Riscos**
 
 Identifiquei 5 riscos principais, classificados por probabilidade (baixa/média/alta) e impacto (baixo/médio/alto):
+
 | Risco | Probabilidade | Impacto | Plano de Mitigação |
-| :--- | :---: | :---: | :--- |
-| **1. IA alucinando insights falsos** | Alta | Alto | Human-in-the-loop + validação 100% no MVP. |
-| **2. Dados sensíveis vazando (LGPD)** | Média | Alto | Anonimização automática + auditoria semanal. |
-| **3. Time resistindo à ferramenta** | Média | Médio | Workshops co-criação + treinamento como "copiloto". |
-| **4. Custos IA explodindo** | Alta | Médio | Limites de tokens + monitoring diário de spend. |
-| **5. Integrações falhando** | Baixa | Médio | PoC separado antes de roadmap Q2. |
+|-------|---------------|---------|--------------------|
+| **1. IA alucinando insights falsos** | Alta | Alto | Human-in-the-loop + validação 100% no MVP |
+| **2. Dados sensíveis vazando (LGPD)** | Média | Alto | Anonimização automática + auditoria semanal |
+| **3. Time resistindo à ferramenta** | Média | Médio | Workshops co-criação + treinamento como "copiloto" |
+| **4. Custos IA explodindo** | Alta | Médio | Limites de tokens + monitoring diário de spend |
+| **5. Integrações falhando** | Baixa | Médio | PoC separado antes de roadmap Q2 |
+
 
 ## **1.6 Gestão de Produtos e IA**
 
@@ -60,29 +64,31 @@ Identifiquei 5 riscos principais, classificados por probabilidade (baixa/média/
 ## **2. Parte Prática – Artefatos do InsightAI**
 
 ## **Artefato 1: Lean Canvas de Visão de Produto**
+
 | Problema | Solução | Métricas Chave | Único Value Prop |
-| :--- | :--- | :--- | :--- |
-| Volumes gigantes de tickets/chats sem priorização; análise manual lenta. | IA generativa: categoriza, sentimento + planos de ação. | Precisão 85%; tempo problemas <4h; eNPS +60. | Insights prescritivos em minutos, não dashboards descritivos. |
+|----------|---------|----------------|------------------|
+| Volumes gigantes de tickets/chats sem priorização; análise manual lenta | IA generativa: categoriza, sentimento + planos de ação | Precisão 85%; tempo problemas <4h; eNPS +60 | Insights prescritivos em minutos, não dashboards descritivos |
 
 | Canais | Público-Alvo | Receita | Estrutura de Custos |
-| :--- | :--- | :--- | :--- |
-| Piloto interno → API Zendesk → Slack. | Gestores CX + times suporte (empresas mid-size). | SaaS: R$99/user/mês pós-MVP. | APIs IA (OpenAI: R$5k/mês); dev (R$20k inicial). |
+|--------|--------------|---------|---------------------|
+| Piloto interno → API Zendesk → Slack | Gestores CX + times suporte (empresas mid-size) | SaaS: R$99/user/mês pós-MVP | APIs IA (OpenAI: R$5k/mês); dev (R$20k inicial) |
 
 | Parceiros Chave | Insumos Chave |
-| :--- | :--- |
-| OpenAI/Anthropic; Zendesk. | Dados anonimizados de tickets. |
+|-----------------|----------------|
+| OpenAI/Anthropic; Zendesk | Dados anonimizados de tickets |
 
 **Artefato 2: Documento de MVP**
 
 **Lista de Funcionalidades + Prioridade + Critérios de Aceitação**
 | Funcionalidade | Prioridade (MoSCoW) | Critérios de Aceitação |
-| :--- | :--- | :--- |
-| Upload CSV/JSON de tickets | Essenciais | Suporta 10k linhas; processa em <2min; confirma upload. |
-| Categorização top 5 problemas via IA | Essenciais | >80% precisão (teste humano); lista com contagem. |
-| Resumo executivo + 3 planos de ação | Essenciais | Gera texto claro em PT-BR; botão "aprovar/editar". |
-| Dashboard sentimento (pos/neg/neutro) | Recomendados | Gráfico pizza; refresh em 30s. |
-| Filtro por canal (chat/email) | Recomendados | Dropdown funcional; resultados filtrados 100%. |
-| Alertas Slack (Q2) | Desejáveis | Envia se problema > threshold; teste end-to-end. |
+|----------------|---------------------|------------------------|
+| Upload CSV/JSON de tickets | Essenciais | Suporta 10k linhas; processa em <2min; confirma upload |
+| Categorização top 5 problemas via IA | Essenciais | >80% precisão (teste humano); lista com contagem |
+| Resumo executivo + 3 planos de ação | Essenciais | Gera texto claro em PT-BR; botão "aprovar/editar" |
+| Dashboard sentimento (pos/neg/neutro) | Recomendados | Gráfico pizza; refresh em 30s |
+| Filtro por canal (chat/email) | Recomendados | Dropdown funcional; resultados filtrados 100% |
+| Alertas Slack (Q2) | Desejáveis | Envia se problema > threshold; teste end-to-end |
+
 
 **Estimativa:** 4 sprints (8 semanas) pra MVP.
 
@@ -131,12 +137,13 @@ Identifiquei 5 riscos principais, classificados por probabilidade (baixa/média/
 
 Artefato 4: Matriz de Riscos
 | Risco | Probabilidade | Impacto | Plano de Mitigação | Responsável |
-| :--- | :---: | :---: | :--- | :--- |
+|-------|---------------|---------|--------------------|-------------|
 | IA alucinando insights | Alta | Alto | Human-in-loop + validação 100% MVP | PM (eu) |
 | Vazamento dados (LGPD) | Média | Alto | Anonimização auto + auditoria | Tech Lead |
 | Custos IA explodindo | Alta | Médio | Monitor tokens diário + limites | DevOps |
 | Resistência do time | Média | Médio | Workshops co-criação | CX Lead |
 | Falha em integrações | Baixa | Médio | PoC pré-Q2 | Engenheiro |
 | Dependência API externa | Média | Alto | Backup com Anthropic | Tech Lead |
+
 
 Como usar: Review quinzenal; escore = Prob x Impacto (ex: Alta/Alto=9 → ação imediata).
