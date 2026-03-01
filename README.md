@@ -15,8 +15,9 @@ Fatiamento de Valor (MoSCoW): Em vez de tentar construir uma ferramenta completa
 Roadmap Orientado a Resultados (Outcomes): O roadmap não é uma lista de desejos. Ele foi planejado para reduzir o risco técnico no início (Q1) e provar o ROI (retorno sobre o investimento) antes de escalar para automações pesadas (Q3).
 
 2. Guia de Interpretação dos Artefatos
+
 | Artefato | O que observar | Objetivo da análise |
-| --- | --- | --- |
+|---|---|---|
 | **Lean Canvas** | Os blocos de "Problema" e "Proposta de Valor". | Entender como a ferramenta gera dinheiro e economiza tempo. |
 | **Documento de MVP** | A coluna de "Critérios de Aceitação". | Entender qual é o nível de qualidade mínimo para o produto ser lançado. |
 | **Roadmap Visual** | A progressão dos trimestres (Q1 a Q3). | Visualizar a evolução da maturidade da IA: de analítica para preditiva. |
